@@ -1,5 +1,15 @@
+# Godot-specific ignores
 .godot/
 /import/
 export.cfg
 export_presets.cfg
+
+# Base de datos de pruebas local
 base_datos/*.db
+
+# Binarios y frameworks pesados de addons que no necesitas versionar
+addons/godot-sqlite/bin/*.a
+addons/godot-sqlite/bin/*.dylib
+addons/godot-sqlite/bin/*.xcframework/
+addons/godot-sqlite/bin/*.dll
+addons/godot-sqlite/bin/*.so
