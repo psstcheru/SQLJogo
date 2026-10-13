@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://6t3erroi7b4d"]
+
+[ext_resource type="Script" uid="uid://3m587m2um3py" path="res://terminal.gd" id="1_sxuvd"]
+
+[sub_resource type="Theme" id="Theme_ik31s"]
+
+[node name="Terminal" type="Panel" unique_id=1511725493]
+script = ExtResource("1_sxuvd")
+
+[node name="Panel" type="Panel" parent="." unique_id=1846590741]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 649.0
+offset_transform_enabled = true
+offset_transform_visual_only = false
+theme = SubResource("Theme_ik31s")
+
+[node name="Expediente texto" type="RichTextLabel" parent="." unique_id=634883745]
+layout_mode = 0
+offset_left = 904.0
+offset_top = 45.0
+offset_right = 1125.0
+offset_bottom = 613.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+bbcode_enabled = true
+text = "[color=#00ff6]Sistema en linea, esperando instrucciones...[/color]
+"
+
+[node name="ConsolaSQL" type="TextEdit" parent="." unique_id=780109135]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 41.0
+offset_right = 890.0
+offset_bottom = 476.0
+
+[node name="Ejecutar" type="Button" parent="." unique_id=10315253]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 422.0
+offset_right = 875.0
+offset_bottom = 462.0
+text = "Enter"
+
+[node name="TerminalResultado" type="RichTextLabel" parent="." unique_id=1096868700]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 495.0
+offset_right = 894.0
+offset_bottom = 609.0
+bbcode_enabled = true
+text = "[color=#00ff66][/color]"
